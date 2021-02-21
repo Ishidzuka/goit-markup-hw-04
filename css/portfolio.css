@@ -9,8 +9,11 @@ body {
   --h-color: rgba(33, 33, 33, 1);
   --white-text: rgba(255, 255, 255, 1);
   --back-color: rgba(47, 48, 58, 1);
-  --btn-hover: rgba(33, 150, 243, 1);
-  --btn-color: rgba(245, 244, 250, 1);
+  --rect-color: rgba(245, 244, 250, 1);
+  --social-color: rgba(175, 177, 184, 1);
+  --border-color: rgba(175, 177, 184, 1);
+  --company-color: rgba(175, 177, 184, 1);
+  --enjoy-hover: rgba(255, 255, 255, 0.1);
 }
 
 .container {
@@ -70,10 +73,38 @@ a {
   letter-spacing: 0.02em;
 }
 
+.contacts-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .page-nav,
 .nav-list,
 .contacts-list {
   display: flex;
+}
+
+.contacts-icon {
+  color: var(--gray-text);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-mail {
+  width: 16px;
+  height: 12px;
+  margin-left: 305px;
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.nav-tel {
+  width: 10px;
+  height: 16px;
+  margin-left: 30px;
+  fill: currentColor;
 }
 
 .page-nav {
@@ -94,12 +125,8 @@ header {
   margin-left: 50px;
 }
 
-.contacts-list li:first-child {
-  margin-left: 331px;
-}
-
 .contacts-list li:last-child {
-  margin-left: 50px;
+  margin-left: 10px;
 }
 
 .nav-contact:hover {
@@ -178,7 +205,6 @@ header {
 .hero {
   padding-top: 94px;
   padding-bottom: 94px;
-  background-image: url(/images/imghero.jpg);
 }
 
 .hero-btn:hover {
@@ -303,4 +329,55 @@ header {
 .footer-contact:first-child {
   margin-bottom: 9px;
   margin-top: 9px;
+}
+
+.enjoy-head {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--white-text);
+  margin-left: 70px;
+}
+
+.enjoy-list {
+  width: 206px;
+  padding: 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-left: 70px;
+  margin-top: 20px;
+}
+
+.footer-text {
+  display: flex;
+  align-items: baseline;
+}
+
+.enjoy-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  color: var(--white-text);
+  background-color: var(--enjoy-hover);
+}
+
+.enjoy-icon {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
+.enjoy-item:hover {
+  background-color: var(--hover-color);
+}
+
+.enjoy-item:hover {
+  color: var(--white-text);
 }

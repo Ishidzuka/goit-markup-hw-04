@@ -462,37 +462,6 @@ header {
   margin-right: 32px;
 }
 
-/*
-.social-link {
-  width: 44px;
-  height: 44px;
-  border-radius: 50px;
-  background-color: var(--white-text);
-  color: var(--white-text);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.social-link:hover {
-  background-color: var(--hover-color);
-}
-
-.social-link:hover {
-  color: var(--hover-color);
-}
-
-.social-item:hover {
-  fill: currentColor;
-}
-
-.social-item {
-  width: 20px;
-  height: 20px;
-  fill: var(--social-color);
-}
-*/
-
 .social-list {
   width: 206px;
   padding: 0px;
