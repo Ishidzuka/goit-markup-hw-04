@@ -28,6 +28,7 @@ body {
   --h-color: rgba(33, 33, 33, 1);
   --white-text: rgba(255, 255, 255, 1);
   --back-color: rgba(47, 48, 58, 1);
+  --rect-color: rgba(245, 244, 250, 1);
 }
 
 /*сброс*/
@@ -91,12 +92,8 @@ header {
   margin-left: 50px;
 }
 
-.contacts-list li:first-child {
-  margin-left: 331px;
-}
-
 .contacts-list li:last-child {
-  margin-left: 50px;
+  margin-left: 10px;
 }
 
 .nav-contact:hover {
@@ -182,7 +179,9 @@ header {
 }
 
 .hero {
-  background-color: var(--back-color);
+  background-image: url(/images/imghero.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
   min-height: 600px;
 }
 
@@ -374,4 +373,43 @@ header {
 
 .footer-contact:first-child {
   margin-bottom: 9px;
+}
+
+/*svg*/
+.contacts-icon {
+  color: var(--gray-text);
+}
+
+.nav-mail {
+  width: 16px;
+  height: 12px;
+  margin-left: 305px;
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.nav-tel {
+  width: 10px;
+  height: 16px;
+  margin-left: 30px;
+  fill: currentColor;
+}
+
+.icon-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.rect {
+  background-color: var(--rect-color);
+  border-radius: 4px;
+  width: 270px;
+  height: 120px;
+}
+
+.about-icon:first-child {
+  width: 65px;
+  height: 70px;
 }
