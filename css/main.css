@@ -29,6 +29,7 @@ body {
   --white-text: rgba(255, 255, 255, 1);
   --back-color: rgba(47, 48, 58, 1);
   --rect-color: rgba(245, 244, 250, 1);
+  --social-color: rgba(175, 177, 184, 1);
 }
 
 /*сброс*/
@@ -398,18 +399,90 @@ header {
 .icon-list {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   margin-bottom: 30px;
 }
 
-.rect {
-  background-color: var(--rect-color);
-  border-radius: 4px;
-  width: 270px;
-  height: 120px;
+.icon-list li:nth-child(2) {
+  margin: 0px 30px;
 }
 
-.about-icon:first-child {
+.icon-list li:nth-child(3) {
+  margin-right: 30px;
+}
+
+.icon-rect {
+  width: 270px;
+  height: 120px;
+  background-color: var(--rect-color);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*ховер бордер если надо будет
+.icon-rect:hover {
+  border: 2px solid var(--hover-color);
+}*/
+
+.antenna {
   width: 65px;
   height: 70px;
+}
+
+.clock {
+  width: 67px;
+  height: 70px;
+}
+
+.diagram {
+  width: 70px;
+  height: 54px;
+}
+
+.astronaut {
+  width: 55px;
+  height: 60px;
+}
+
+.social-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 32px;
+  padding-top: 0px;
+}
+
+.social-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.instagram {
+  width: 20px;
+  height: 20px;
+  fill: var(--social-color);
+}
+
+.twitter {
+  width: 20px;
+  height: 20px;
+  fill: var(--social-color);
+}
+
+.facebook {
+  width: 20px;
+  height: 20px;
+  fill: var(--social-color);
+}
+
+.linkedin {
+  width: 20px;
+  height: 20px;
+  fill: var(--social-color);
+}
+
+.instagram:hover {
+  fill: var(--white-text);
+  background-color: var(--hover-color);
 }
