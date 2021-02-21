@@ -14,6 +14,8 @@ body {
   --border-color: rgba(175, 177, 184, 1);
   --company-color: rgba(175, 177, 184, 1);
   --enjoy-hover: rgba(255, 255, 255, 0.1);
+  --btn-hover: rgba(33, 150, 243, 1);
+  --btn-color: rgba(245, 244, 250, 1);
 }
 
 .container {
