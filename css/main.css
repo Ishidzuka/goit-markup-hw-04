@@ -32,6 +32,7 @@ body {
   --social-color: rgba(175, 177, 184, 1);
   --border-color: rgba(175, 177, 184, 1);
   --company-color: rgba(175, 177, 184, 1);
+  --enjoy-hover: rgba(255, 255, 255, 0.1);
 }
 
 /*сброс*/
@@ -375,7 +376,7 @@ header {
 }
 
 .footer-contact:first-child {
-  margin-bottom: 9px;
+  margin: 9px 0px;
 }
 
 /*svg*/
@@ -594,8 +595,53 @@ header {
   border-color: var(--hover-color);
 }
 
-.enjoy-text {
+.footer-text {
   display: flex;
-  align-items: center;
+  align-items: baseline;
+}
+
+.enjoy-head {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--white-text);
+  margin-left: 70px;
+}
+
+.enjoy-list {
+  width: 206px;
+  padding: 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-left: 70px;
+  margin-top: 20px;
+}
+
+.enjoy-item {
+  display: flex;
   justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  color: var(--white-text);
+  background-color: var(--enjoy-hover);
+}
+
+.enjoy-icon {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
+.enjoy-item:hover {
+  background-color: var(--hover-color);
+}
+
+.enjoy-item:hover {
+  color: var(--white-text);
 }
