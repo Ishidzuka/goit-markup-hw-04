@@ -183,7 +183,7 @@ header {
 }
 
 .hero {
-  background-image: url(../images/imghero.jpg);
+  background-image: url('../images/imghero.jpg');
   background-repeat: no-repeat;
   background-position: center;
   height: 600px;
