@@ -30,6 +30,8 @@ body {
   --back-color: rgba(47, 48, 58, 1);
   --rect-color: rgba(245, 244, 250, 1);
   --social-color: rgba(175, 177, 184, 1);
+  --border-color: rgba(175, 177, 184, 1);
+  --company-color: rgba(175, 177, 184, 1);
 }
 
 /*сброс*/
@@ -486,8 +488,60 @@ header {
 
 .clients {
   padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .client-head {
   text-align: center;
+}
+
+.client-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.client-rect {
+  width: 170px;
+  height: 90px;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.client-item {
+  color: var(--company-color);
+}
+
+.icon-logo1 {
+  width: 45px;
+  height: 50px;
+}
+
+.icon-logo2 {
+  width: 40px;
+  height: 52px;
+}
+
+.icon-logo3 {
+  width: 42px;
+  height: 42px;
+}
+
+.icon-logo4 {
+  width: 80px;
+  height: 42px;
+}
+
+.icon-logo5 {
+  width: 59px;
+  height: 47px;
+}
+
+.icon-logo6 {
+  width: 88px;
+  height: 45px;
 }
