@@ -180,7 +180,7 @@ header {
 }
 
 .hero {
-  background-image: url(/images/imghero.jpg);
+  background-image: url(images/imghero.jpg);
   background-repeat: no-repeat;
   background-position: center;
   min-height: 600px;
@@ -294,7 +294,7 @@ header {
   line-height: 19px;
   letter-spacing: 0.03em;
   text-align: center;
-  padding-bottom: 30px;
+  padding-bottom: 16px;
 }
 
 .team-head {
@@ -379,6 +379,9 @@ header {
 /*svg*/
 .contacts-icon {
   color: var(--gray-text);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .nav-mail {
@@ -445,44 +448,46 @@ header {
   height: 60px;
 }
 
-.social-links {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 30px 32px;
-  padding-top: 0px;
-}
-
 .social-list {
   display: flex;
+  width: 206px;
   justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  margin-bottom: 20px;
+  margin-left: 32px;
+  margin-right: 32px;
 }
 
-.instagram {
-  width: 20px;
-  height: 20px;
-  fill: var(--social-color);
+.social-link {
+  width: 44px;
+  height: 44px;
+  border-radius: 50px;
+  background-color: var(--white-text);
+  color: var(--white-text);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.twitter {
-  width: 20px;
-  height: 20px;
-  fill: var(--social-color);
-}
-
-.facebook {
-  width: 20px;
-  height: 20px;
-  fill: var(--social-color);
-}
-
-.linkedin {
-  width: 20px;
-  height: 20px;
-  fill: var(--social-color);
-}
-
-.instagram:hover {
-  fill: var(--white-text);
+.social-link:hover {
   background-color: var(--hover-color);
+}
+
+.social-item:hover {
+  fill: currentColor;
+}
+
+.social-item {
+  width: 20px;
+  height: 20px;
+  fill: var(--social-color);
+}
+
+.clients {
+  padding-top: 94px;
+}
+
+.client-head {
+  text-align: center;
 }
