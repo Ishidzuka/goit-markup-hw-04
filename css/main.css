@@ -182,7 +182,7 @@ header {
 }
 
 .hero {
-  background-image: url(images/imghero.jpg);
+  background-image: url(/images/imghero.jpg);
   background-repeat: no-repeat;
   background-position: center;
   min-height: 600px;
@@ -461,6 +461,7 @@ header {
   margin-right: 32px;
 }
 
+/*
 .social-link {
   width: 44px;
   height: 44px;
@@ -476,6 +477,10 @@ header {
   background-color: var(--hover-color);
 }
 
+.social-link:hover {
+  color: var(--hover-color);
+}
+
 .social-item:hover {
   fill: currentColor;
 }
@@ -484,6 +489,41 @@ header {
   width: 20px;
   height: 20px;
   fill: var(--social-color);
+}
+*/
+
+.social-list {
+  width: 206px;
+  padding: 0px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.link-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  color: var(--social-color);
+}
+
+.social-icon {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
+.link-item:hover {
+  background-color: var(--hover-color);
+}
+
+.link-item:hover {
+  color: var(--white-text);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 .clients {
@@ -502,7 +542,7 @@ header {
   margin-top: 50px;
 }
 
-.client-rect {
+.client-link {
   width: 170px;
   height: 90px;
   border: 1px solid var(--border-color);
@@ -510,38 +550,52 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
+  color: var(--social-color);
 }
 
-.client-item {
-  color: var(--company-color);
-}
-
-.icon-logo1 {
+.icon-yaco {
   width: 45px;
   height: 50px;
+  fill: currentColor;
 }
 
-.icon-logo2 {
+.icon-tagline {
   width: 40px;
   height: 52px;
+  fill: currentColor;
 }
 
-.icon-logo3 {
+.icon-company {
   width: 42px;
   height: 42px;
+  fill: currentColor;
 }
 
-.icon-logo4 {
+.icon-foster {
   width: 80px;
   height: 42px;
+  fill: currentColor;
 }
 
-.icon-logo5 {
+.icon-brand {
   width: 59px;
   height: 47px;
+  fill: currentColor;
 }
 
-.icon-logo6 {
+.icon-ctl {
   width: 88px;
   height: 45px;
+  fill: currentColor;
+}
+
+.client-link:hover {
+  color: var(--hover-color);
+  border-color: var(--hover-color);
+}
+
+.enjoy-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
