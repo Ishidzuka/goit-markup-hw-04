@@ -183,10 +183,10 @@ header {
 }
 
 .hero {
-  background-image: url(/images/imghero.jpg);
+  background-image: url(../images/imghero.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  min-height: 600px;
+  height: 600px;
 }
 
 /*О нас*/
