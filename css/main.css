@@ -183,10 +183,15 @@ header {
 }
 
 .hero {
-  background-image: url('../images/imghero.jpg');
   background-repeat: no-repeat;
   background-position: center;
   height: 600px;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url('../images/imghero.jpg');
 }
 
 /*О нас*/
@@ -496,13 +501,25 @@ header {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
+.link-item:focus {
+  color: var(--white-text);
+  background-color: var(--hover-color);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
 .clients {
   padding-top: 94px;
   padding-bottom: 94px;
 }
 
 .client-head {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
   text-align: center;
+  letter-spacing: 0.03em;
 }
 
 .client-list {
@@ -564,6 +581,11 @@ header {
   border-color: var(--hover-color);
 }
 
+.client-link:focus {
+  color: var(--hover-color);
+  border-color: var(--hover-color);
+}
+
 .footer-text {
   display: flex;
   align-items: baseline;
@@ -613,4 +635,9 @@ header {
 
 .enjoy-item:hover {
   color: var(--white-text);
+}
+
+.enjoy-item:focus {
+  color: var(--white-text);
+  background-color: var(--hover-color);
 }
