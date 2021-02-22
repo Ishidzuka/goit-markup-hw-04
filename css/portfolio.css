@@ -75,38 +75,14 @@ a {
   letter-spacing: 0.02em;
 }
 
-.contacts-list {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 .page-nav,
 .nav-list,
 .contacts-list {
   display: flex;
 }
 
-.contacts-icon {
-  color: var(--gray-text);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.nav-mail {
-  width: 16px;
-  height: 12px;
+.contacts-list {
   margin-left: 305px;
-  margin-right: 10px;
-  fill: currentColor;
-}
-
-.nav-tel {
-  width: 10px;
-  height: 16px;
-  margin-left: 30px;
-  fill: currentColor;
 }
 
 .page-nav {
@@ -127,16 +103,18 @@ header {
   margin-left: 50px;
 }
 
-.contacts-list li:last-child {
-  margin-left: 10px;
-}
-
 .nav-contact:hover {
   color: rgba(33, 150, 243, 1);
 }
 
 .nav-contact:focus {
   color: rgba(33, 150, 243, 1);
+}
+
+.nav-contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .nav-link {
@@ -172,6 +150,21 @@ header {
 .web {
   color: rgba(33, 150, 243, 1);
   text-decoration: none;
+}
+
+.nav-mail {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.nav-tel {
+  width: 10px;
+  height: 16px;
+  margin-left: 30px;
+  margin-right: 10px;
+  fill: currentColor;
 }
 
 /*герой*/
